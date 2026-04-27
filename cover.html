@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Winteriors – Online Sales Associate Proposal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & base ─────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── CSS Variables ───────────────────────── */
+    :root {
+      --navy:    #1a2744;
+      --crimson: #c0392b;
+      --light:   #f2f4f7;
+      --white:   #ffffff;
+      --grey:    #aaaaaa;
+      --text:    #1a2744;
+    }
+
+    /* ── Page / print setup ──────────────────── */
+    html, body {
+      width: 210mm;
+      height: 297mm;
+      background: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: 'Barlow', sans-serif;
+    }
+
+    @media print {
+      html, body {
+        width: 210mm;
+        height: 297mm;
+        background: none;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+
+    /* ── Cover wrapper ───────────────────────── */
+    .cover {
+      width: 210mm;
+      height: 297mm;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ══════════════════════════════════════════
+       TOP SECTION
+    ══════════════════════════════════════════ */
+    .top {
+      padding: 32px 40px 0;
+      background: var(--white);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Logo area */
+    .logo-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--crimson);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-circle svg {
+      width: 28px;
+      height: 28px;
+      fill: var(--white);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-text .brand {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .logo-text .tagline {
+      font-size: 8px;
+      color: var(--grey);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ── Title block ─────────────────────────── */
+    .title-block {
+      padding: 36px 40px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .title-sub {
+      font-family: 'Barlow', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      color: var(--navy);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .title-main {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 72px;
+      font-weight: 800;
+      color: var(--navy);
+      text-transform: uppercase;
+      line-height: 0.9;
+      letter-spacing: -1px;
+    }
+
+    /* ══════════════════════════════════════════
+       DIAGONAL GRAPHIC BAND
+    ══════════════════════════════════════════ */
+    .band {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      margin-top: 32px;
+      flex-shrink: 0;
+    }
+
+    /* Full navy base */
+    .band-navy {
+      position: absolute;
+      inset: 0;
+      background: var(--navy);
+    }
+
+    /* Crimson diagonal – clipped polygon */
+    .band-crimson {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 55%;
+      height: 100%;
+      background: var(--crimson);
+      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    /* Light grey triangle bottom-right */
+    .band-triangle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 90px 90px;
+      border-color: transparent transparent var(--light) transparent;
+    }
+
+    /* Subtle decorative lines on navy side */
+    .band-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0.06;
+    }
+
+    .band-lines::before,
+    .band-lines::after {
+      content: '';
+      position: absolute;
+      top: -40px;
+      width: 2px;
+      height: 260px;
+      background: var(--white);
+      transform-origin: top center;
+    }
+
+    .band-lines::before {
+      left: 60px;
+      transform: rotate(15deg);
+    }
+
+    .band-lines::after {
+      left: 110px;
+      transform: rotate(15deg);
+    }
+
+    /* ══════════════════════════════════════════
+       BOTTOM SECTION
+    ══════════════════════════════════════════ */
+    .bottom {
+      flex: 1;
+      padding: 28px 40px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Date row */
+    .date-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+
+    .date {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* Prepared blocks */
+    .prepared-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 40px;
+      flex: 1;
+      align-content: start;
+    }
+
+    .prepared-block {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .prepared-label {
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--crimson);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .prepared-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+
+    .prepared-detail {
+      font-size: 10px;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 2px;
+    }
+
+    /* Divider between the two columns (visual) */
+    .prepared-grid .prepared-block:first-child {
+      border-right: 1px solid #ddd;
+      padding-right: 40px;
+    }
+
+    /* Contact list */
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      color: #444;
+    }
+
+    .contact-list .icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-list .icon svg {
+      width: 9px;
+      height: 9px;
+      fill: var(--white);
+    }
+
+    /* Confidentiality note */
+    .confidential {
+      font-size: 7.5px;
+      color: var(--grey);
+      text-align: center;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      margin-top: 20px;
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+<body>
+<div class="cover">
+
+  <!-- ── Top: Logo ─────────────────────────── -->
+  <div class="top">
+    <div class="logo-box">
+      <div class="logo-circle">
+        <!-- Simple house/furniture icon SVG -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9.5L12 3l9 6.5V21H3V9.5z"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="brand">Winteriors</span>
+        <span class="tagline">Fine Furniture · Lusaka, Zambia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Title block ────────────────────────── -->
+  <div class="title-block">
+    <div class="title-sub">Online Sales Associate</div>
+    <div class="title-main">Proposal</div>
+  </div>
+
+  <!-- ── Diagonal band ─────────────────────── -->
+  <div class="band">
+    <div class="band-navy"></div>
+    <div class="band-crimson"></div>
+    <div class="band-triangle"></div>
+    <div class="band-lines"></div>
+  </div>
+
+  <!-- ── Bottom: Details ───────────────────── -->
+  <div class="bottom">
+
+    <div class="date-row">
+      <span class="date">21 April 2026</span>
+    </div>
+
+    <div class="prepared-grid">
+
+      <!-- Prepared for -->
+      <div class="prepared-block">
+        <div class="prepared-label">Prepared for</div>
+        <div class="prepared-name">Winteriors</div>
+        <div class="prepared-detail">Furniture Store<br>Lusaka, Zambia</div>
+      </div>
+
+      <!-- Prepared by -->
+      <div class="prepared-block">
+        <div class="prepared-label">Prepared by</div>
+        <div class="prepared-name">Mark Munyaka</div>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">
+              <!-- Globe -->
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 2c.9 0 2 .8 2.9 2.5H9.1C10 6.8 11.1 4 12 4zm-4.5 2.5H4.5A8 8 0 0 1 9 4.3c-.6.7-1.1 1.4-1.5 2.2zM4 12c0-.7.1-1.4.3-2H7.1c-.1.7-.1 1.3-.1 2s0 1.3.1 2H4.3A8 8 0 0 1 4 12zm.5 4h2.8c.4.8.9 1.5 1.5 2.2A8 8 0 0 1 4.5 16zM12 20c-.9 0-2-.8-2.9-2.5h5.8C14 19.2 12.9 20 12 20zm4.5-2.5h-2.8c.4-.8.9-1.5 1.5-2.2A8 8 0 0 1 16.5 17.5zm.4-3.5H13v-2h2.9c.1.7.1 1.3.1 2zm0-4H13V8h2.9c.1.7.1 1.3.1 2zm.6-4h-2.8c-.4-.8-.9-1.5-1.5-2.2A8 8 0 0 1 19.5 7.5z"/></svg>
+            </span>
+            markmunyaka.kwamwena.link
+          </li>
+          <li>
+            <span class="icon">
+              <!-- Envelope -->
+              <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            markmunyaka@kwamwena.link
+          </li>
+          <li>
+            <span class="icon">
+              <!-- Phone -->
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+            </span>
+            +260 979 314 286
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="confidential">
+      This document is intended solely for the Winteriors team.
+    </p>
+
+  </div>
+</div>
+</body>
+</html>
