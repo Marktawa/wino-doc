@@ -2,29 +2,37 @@
 
 ## Cover
 
-**[Top half - hexagon graphics, cross stitch patterns and skyline waves]**
+### Top Third
 
-Online Sales Associate
-Job Proposal
-*A proposal to grow Winteriors' sales through the business website.*
+- ONLINE SALES ASSOCIATE [Large Bold with Tall Font]
+- PROPOSAL [Large Bold and Wide]
+- *A proposal to grow Winteriors' sales through the business website* [Small]
 
----
+### Middle Third
+- Image of Winteriors Storefront or image of screenshots of Winteriors website both desktop and mobile in mockup style. Possibly include a semi-transparent overlay, maybe in gold which reflects the colors of the organization
 
-**[Bottom half]**
+### Bottom Third
+* Prepared for:
+- **Winteriors Team**
+- Address
+- Phone Number
+- Email
 
-Prepared for:
-**Winteriors** **[Winteriors Logo]**
+* Prepared by:
+- **Mark T. Munyaka**
+- Address
+- markmunyaka.kwamwena.link
+- markmunyaka@kwamwena.link
+- +260 979 314 286
 
-Prepared by:
-**Mark Munyaka**
+* Date:
+- 29 April 2026
 
-🌐 markmunyaka.kwamwena.link
-✉️ markmunyaka@kwamwena.link
-📞 +260 979 314 286
+* Reference:
+- Proposal Ref: OSA-2026-04
 
-Date: 21 April 2026
+- This document is intended solely for the Winteriors Team
 
-*This document is intended solely for the Winteriors team.*
 
 ## Introduction
 Greetings Winteriors Team

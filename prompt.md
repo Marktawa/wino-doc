@@ -1,5 +1,134 @@
 ## PROMPT
 
+The following text shows what I have decided to include in the front cover. Now, I want to design the back cover. 
+
+Given your suggestion for the back cover which is a signature page that is practical and signals seriousness and a back cover that closes the document cleanly and looks professional what would the back cover look like?
+
+## CLAUDE
+Looking at your front cover structure, the back cover should feel like its natural conclusion — same visual language, but quieter. Here is what I would suggest:
+
+---
+
+**Back Cover Layout**
+
+### Top Third
+- The same diagonal graphic band from the front cover, flipped or mirrored — this creates a visual bookend effect
+- Winteriors logo centered or left-aligned within the band
+
+### Middle Third — Signature Block
+This is where the acceptance/signature section lives:
+
+---
+*By signing below, the Winteriors Team acknowledges receipt of this proposal and agrees to engage Mark T. Munyaka as Online Sales Associate under the terms outlined in this document.*
+
+**Accepted by:**
+
+&nbsp;
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ &nbsp;&nbsp;&nbsp; \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date
+
+&nbsp;
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Full Name & Title
+
+&nbsp;
+
+**Prepared by:**
+
+Mark T. Munyaka &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 29 April 2026
+
+---
+
+### Bottom Third
+- A closing line in a clean, understated font — something like:
+  *"Thank you for taking the time to review this proposal. I look forward to contributing to the growth of Winteriors."*
+- Proposal reference: OSA-2026-04
+- The same confidentiality note from the front: *This document is intended solely for the Winteriors Team*
+- A thin crimson or gold line at the very bottom echoing the front cover's accent
+
+---
+
+**A few design notes worth considering:**
+
+The back cover should use noticeably more white space than the front. The front cover makes a bold first impression — the back cover should feel calm and conclusive by comparison. Less is more here.
+
+The signature block works best centered on the page with generous spacing between the lines. It needs room to breathe so it feels like a formal document rather than a form.
+
+If the front cover uses a gold overlay on the image in the middle third, carry that gold accent into the back cover — perhaps as the colour of the closing line or a thin rule above the signature block. That continuity ties the two covers together visually even if someone only glances at them.
+
+## PROMPT
+Do you have any idea of what should appear at the end of the proposal document? Sure we have come up with a cover page and a design for what appears in the interior of the document. I know there is a conclusion and all but honestly, what should appear at the end of the document. Is it some sort of backend cover page or something else?
+
+## CLAUDE
+Yes, professional proposals typically have a deliberate closing element. Here are the common options:
+
+---
+
+**A Back Cover**
+The mirror of the front cover. Usually simpler — the same colour scheme and branding but minimal text. Typically just includes contact details, a website, and sometimes a short closing line like *"We look forward to working with you."* It gives the document a finished, bookended feel.
+
+**A Signature / Acceptance Page**
+Very common in formal proposals. It is a simple page near the end that says something like *"By signing below, Winteriors agrees to the terms of this proposal."* with a line for a signature, a printed name, and a date. It turns the proposal into a document that can become an agreement. Given that you are essentially pitching a working arrangement, this could be useful.
+
+**A Terms and Conditions Page**
+Less common for a small proposal like this but worth considering if you want to be explicit about things like notice periods, what happens if either party wants to end the arrangement, ownership of content you create, and so on. For a first proposal to a small local business it might feel overly formal — but it protects you.
+
+**An Appendix**
+If you have supporting material — screenshots from the website audit, traffic data, examples of content — an appendix is where they go. It keeps the main proposal clean while giving the reader access to the detail if they want it.
+
+---
+
+**For your specific proposal** I would suggest keeping it simple:
+
+1. A **signature page** — practical and signals seriousness
+2. A **back cover** — closes the document cleanly and looks professional
+
+The back cover in particular costs very little effort in Figma and makes a big difference to how the document feels when someone flips through it.
+
+## PROMPT
+Here is some more context, the document is part of an elaborate plan to work as an Online Sales Associate for Winteriors. I have attached a document `proposal2.md` that describes in detail what this is all about. Read through and absorb the context. Let it help you come up with a new introduction for the Winteriors Website Improvement Plan.
+
+## CLAUDE
+Having read through the proposal thoroughly, I now have great context — the Website Improvement Plan is essentially an attachment to the job application, serving as a practical demonstration of Mark's capabilities and initiative. The introduction should reflect that framing. Here's a revised version:
+
+---
+
+This document accompanies a job proposal for the role of Online Sales Associate at Winteriors. As part of that proposal, I have prepared a live demo of an updated Winteriors website, available at [winteriors.kwamwena.link](https://winteriors.kwamwena.link). This document is a record of everything I found wrong with the current website and what I did to address it.
+
+The Winteriors website is the digital face of the brand. It is the first point of contact for many potential customers and, as such, it needs to be in good shape. Going through the website, it became clear that there were a number of issues that could leave visitors with a poor impression of the business. These range from broken links and missing content to placeholder text and misplaced images.
+
+Each issue is described clearly, alongside what the expected behaviour should be and the solution I applied. The goal is not only to have a working website, but to ensure that anyone visiting Winteriors online gets an experience that reflects the quality of the brand. It is also important that the Winteriors team understands what was done and why, so that they can follow along and ask questions where needed.
+
+---
+
+The key change from the first draft is the opening paragraph, which anchors this document within the broader application and points to the live demo — tying the two together the way the proposal does. Let me know if you'd like any adjustments.
+
+## PROMPT
+I want to write an introduction to the following document: `WEBSITE.md` which has been attached. The document is called the Winteriors Website Improvement Plan. For context the website for the furniture company called Winteriors is not working well and this may affect the brand image. I decided to step in and help them by at least fixing the issues and describing what I fixed so that they can better understand what I did and what's going on in general.
+
+I want the introduction to maintain the style of the author in terms of writing style.
+
+## CLAUDE
+Now I have a thorough understanding of the document. Let me write an introduction that matches the author's writing style — clear, direct, practical, and slightly formal but approachable, with a helpful and explanatory tone.
+
+Here's the introduction:
+
+---
+
+The Winteriors website is the digital face of the brand. It is the first point of contact for many potential customers and, as such, it needs to be in good shape. Unfortunately, the website has a number of issues that may leave visitors with a poor impression of the business. These range from broken links and missing content to placeholder text and misplaced images.
+
+To help address this, I went through the website carefully and identified the issues. Where I could, I fixed them. This document is a record of what I found and what I did about it. Each issue is described clearly, alongside what the expected behaviour should be and the solution I applied.
+
+The goal is not only to have a working website, but to ensure that anyone visiting Winteriors online gets an experience that reflects the quality of the brand. It is also important that the Winteriors team understands what was done and why, so that they can maintain and build on it going forward.
+
+---
+
+Feel free to adjust any part of it — for example, if you'd like the tone to be more or less formal, or if you want to add something personal about your relationship with Winteriors.
+
+## PROMPT
+
 What would be the best option to create a pdf as seen in the attached image `proposal-template.jpg`? If you check the attached image it has a Header and a footer. It looks like MS Word was used to make this. I don't want to use MS Word. I would like something in text format that I could explicitly declare how my Header will look and how my Footer will look and then it produces the look I want for print.
 
 ## PROMPT
